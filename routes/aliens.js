@@ -1,9 +1,13 @@
 import express from 'express'
 const router = express.Router()
 
-router.get('/', (req, res)=>{
-    console.log(`GET request`)
-    res.send('<h1>Get Request</h1>')
+router.get('/', async(req, res)=>{
+    try {
+
+    } catch(err) {
+        res.send(`Error: ${err}`)    
+    }
+    
 })
 
 export default router
