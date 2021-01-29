@@ -15,3 +15,5 @@ const alienSchema = new mongoose.Schema({
         default: false
     }
 })
+
+export default mongoose.model('Alien', alienSchema)
